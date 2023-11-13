@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Questrial&display=swap');
+@font-face {
+    font-family: Oddlini-Regular;
+    src: url(fonts/oddlini-regular.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-family: 'Oddlini-Regular';
+}
+
+html {
+    
+    transition: .5s;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Estilo de la barra de desplazamiento vertical */
+::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle at 50% -20.71%, #f6ee6b 0, #f2dc63 12.5%, #e9c95c 25%, #ddb556 37.5%, #cea04f 50%, #bd8c49 62.5%, #ad7a44 75%, #9e6b40 87.5%, #915e3c 100%);
+    border-radius: 6px; /* Borde redondeado del "pulgón" */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+
+.nav {
+    display: flex;
+    margin: 35px;
+    position: absolute;
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    z-index: 9999;
+    background-color: white;
+    padding: 15px 32px 15px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.navbar i {
+    color: black;
+    font-size: 23.3px;
+    background-image: radial-gradient(circle at 50% -20.71%, #f6ee6b 0, #f2dc63 12.5%, #e9c95c 25%, #ddb556 37.5%, #cea04f 50%, #bd8c49 62.5%, #ad7a44 75%, #9e6b40 87.5%, #915e3c 100%);
+    padding: 10px;
+    transform: translateY(11.2%);
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: -24px;
+}
+
+.language a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none; 
+    margin-left: 2px;
+}
+
+.language i {
+    color: white;
+    margin-left: 5px;
+    transform: translateY(11%);
+}
+
+.nav-right {
+    transform: translateX(370%);
+    margin-top: 4px;
+}
+
+.nav-right .user i{
+    background-color: white;
+    font-size: 19px;
+    padding: 8px 9.5px;
+    border-radius: 50px;
+    transform: translateY(8%);
+}
+
+.nav-right input {
+    padding: 10px 10px 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    border-style: none;
+}
+
+.search i {
+    background-image: radial-gradient(circle at 50% -20.71%, #f6ee6b 0, #f2dc63 12.5%, #e9c95c 25%, #ddb556 37.5%, #cea04f 50%, #bd8c49 62.5%, #ad7a44 75%, #9e6b40 87.5%, #915e3c 100%);
+    padding: 9px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 15.5px;
+    transform: translateY(3%);
+    margin-left: -36px;
+}
+
+.header-img {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 55vh;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.header-img img {
+    height: auto;
+    width: 1355px;
+    transform: translateY(-4%);
+}
+
+.button-home {
+    text-align: center;
+}
+
+.button-home span i {
+    color: black;
+    border: 12px solid white;
+    transform: translateY(-50%)  rotate(45deg);
+    border-radius: 100px;
+    font-size: 25px;
+    background-image: radial-gradient(circle at 50% -20.71%, #f6ee6b 0, #f2dc63 12.5%, #e9c95c 25%, #ddb556 37.5%, #cea04f 50%, #bd8c49 62.5%, #ad7a44 75%, #9e6b40 87.5%, #915e3c 100%);
+    padding: 43px 45px 40px 45px;
+    transition: .5s;
+}
+
+.texto {
+    margin: -125px 12px;
+}
+
+.texto h4 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Questrial', sans-serif;
+}
+
+.texto h2 {
+    font-size: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.texto p {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: gray;
+}
+
+.iass {
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-left: 380px;
+    transform: translateY(-140%);
+}
+
+.iass p, b {
+    font-family: 'Questrial', sans-serif;
+    color: #000;
+}
+
+.iass .gran {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.iass p {
+    color: rgb(82, 81, 81);
+    background-color: white;
+    width: 250px;
+    border-radius: 25px;
+}
+
+.num-ia {
+    margin-left: 392px;
+}
+
+.num-ia span img {
+    width: 40px;
+    margin-left: -15px;
+    border: 2px solid white;
+    height: 40px;
+    border-radius: 50px;
+    transform: translateY(-170%);
+}
+
+.images {
+    margin-left: 838px;
+    transform: translateY(-44.5%);
+    overflow: hidden;
+}
+
+.images img {
+    display: block;
+    width: 500px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.images .image2 {
+    margin-top: 26px;
+}
+
+.image1 .more {
+    position: absolute;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 120px;
+    transform: translateX(10%);
+}
+
+.image1 .more:hover {
+    background-image: radial-gradient(circle at 50% -20.71%, #f6ee6b 0, #f2dc63 12.5%, #e9c95c 25%, #ddb556 37.5%, #cea04f 50%, #bd8c49 62.5%, #ad7a44 75%, #9e6b40 87.5%, #915e3c 100%);
+    transition: .5s;
+    font-weight: bold;
+}
+
+.image2 .more {
+    position: absolute;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 350px;
+    transform: translateX(10%);
+}
+
+.image2 .more:hover {
+    background-image: radial-gradient(circle at 50% -20.71%, #f6ee6b 0, #f2dc63 12.5%, #e9c95c 25%, #ddb556 37.5%, #cea04f 50%, #bd8c49 62.5%, #ad7a44 75%, #9e6b40 87.5%, #915e3c 100%);
+    transition: .5s;
+    font-weight: bold;
+}
+
+.pages {
+    display: flex;
+    background-color: transparent;
+    margin-top: -403px;
+    transform: translateX(24%);
+}
+
+.pages img {
+    width:140px;
+    border-radius: 15px;
+    margin-right: -10px;
+}
+
+.pages span i {
+    color: white;
+    background-color: black;
+    padding: 10px 12px;
+    border-radius: 100px;
+    transform: translateX(-230%) translateY(15%) rotate(45deg);
+}
+
+.intera {
+    margin: -312px 0px 0px 15px;
+}
+
+.intera span {
+    background-color:transparent;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 50px;
+    color: #000;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 500;
+}
+
+.intera span:hover {
+   background-color: black;
+   color: white;
+   border: none;
+   transition: 1s;
+}
+
+.intera .iconos i {
+    margin: 60px 3px 0px 2px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.intera .iconos i:hover {
+    background-color: black;
+   color: white;
+   border: none;
+   transition: 1s;
+}
+
+.pages .one {
+    height: 250px;
+    transform: translateY(-22.5%);
+}
+
+.pages .two {
+    height: 300px;
+    transform: translateY(-35.4%);
+}
+
+.pages .three {
+    height: 370px;
+    transform: translateY(-47.5%);
+}
+
+#uno {
+    transform: translateY(-161%) translateX(-220%);
+    background-color:black;
+    color: white;
+}
+
+#dos {
+    transform: translateY(-300%) translateX(-220%);
+    background-color:black;
+    color: white;
+}
+
+#tres {
+    transform: translateY(-490%) translateX(-220%);
+    background-color:black;
+    color: white;
+}
+
+.content1 {
+    margin: -57px 0px 0px 0px;
+    position: absolute;
+    color: black;
+    padding: 45px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.content1 h3 {
+    margin-top: 19px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.content1 i {
+    font-size: 40px;
+    margin-left: 39px;
+}
+
+.content2 {
+    margin: -110px 0px 0px -2px;
+    position: absolute;
+    color: black;
+    padding: 35px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.content2 h3 {
+    margin-top: 19px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.content2 i {
+    font-size: 40px;
+    margin-left: 39.5px;
+}
+
+.content3 {
+    margin: -176px 0px 0px -4px;
+    position: absolute;
+    color: black;
+    padding: 43px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.content3 h3 {
+    margin-top: 19px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.content3 i {
+    font-size: 40px;
+    margin-left:43px;
+}
+
